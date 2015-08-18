@@ -1,7 +1,7 @@
 # food-todo
 ## 개요
 숙원사업인 일정관리 솔루션 만들기를 또 시작하였다.
-[food todo의 2014년 버젼](http://milooy.github.io/foodtodo-web/)을 코드상/기능상으로 모두 개선한 버전이다.
+[food todo의 2014년 버젼](https://github.com/milooy/foodtodo-web)을 코드상/기능상으로 모두 개선한 버전이다.
 
 ## Application Definition Statement
 일정 관리를 원하는 사람들을 위한
