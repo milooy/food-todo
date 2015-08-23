@@ -1,4 +1,4 @@
-.task-list {
+.todo-list {
   width: 250px;
   float: left;
   margin: 0 5px;
@@ -7,22 +7,35 @@
   border-radius: 10px;
   padding-bottom: 15px;
 
-  .todo-task {
+  .todo-form {
+    .todo-input {
+      display: inline-block;
+    }
+    .add-btn {
+      display: inline-block;
+    }
+  }
+
+  .todo {
     border-radius: 5px;
     background-color: #fff;
-    width: 230px;
+    width: 220px;
     margin: 5px;
     padding: 5px;
 
     input {
       display: inline-block;
     }
-
-    .task-header {
+    .todo-header {
       display: inline-block;
-      width: 200px;
+      width: 130px;
       height: 30px;
     }
+    .destroy-btn {
+      display: inline-block;
+
+    }
+
   }
 
 }

@@ -17,34 +17,42 @@
     </head>
     <body>
         <h1>Food Todo</h1>
-        <div class="task-list">
-            <h3>Add</h3>
-            <form id="todo-form">
-                <input type="TODO" placeholder="Title" />
-                <input type="button" class="add-btn" value="ADD TODO" />
-            </form>
-
-            <input type="button" class="clear-btn" value="CLEAR ALL" />
-        </div>
-        <div class="task-list" id="pending">
+        <div class="todo-list" id="list-inbox">
             <h3>INBOX</h3>
-            <div class="todo-task">
-                <input type="checkbox" name="done" value="todo1">
-                <div class="task-header">푸드투두 설계</div>
+            <div id="todo-form">
+                <input class="todo-input" placeholder="투두 입력 인풋" autofocus>
+                <input type="button" class="add-btn" value="ADD" />
             </div>
+            <li data-id='123' class="todo" data-completed='0'>
+                <input class="toggle" type="checkbox" checked>
+                <label class="todo-title">푸드투두 설계</label>
+                <button class="destroy-btn">X</button>
+            </li>
         </div>
 
-        <div class="task-list" id="inProgress">
+        <div class="todo-list" id="list-urgent">
             <h3>URGENT</h3>
         </div>
 
-        <div class="task-list" id="completed">
+        <div class="todo-list" id="list-today">
             <h3>TODAY</h3>
         </div>
+        <input type="button" class="clear-btn" value="CLEAR DONE" />
+        <input type="button" class="clear-btn" value="DELETE ALL" />
+
+
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script src="js/vendor/handlebars-v3.0.3.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
+        <script id="todo-template" type="text/x-handlebars-template">
+            <li data-id={{id}} class="todo" data-completed={{completed}}>
+                <input class="toggle" type="checkbox" checked>
+                <label class="todo-title">{{title}}</label>
+                <button class="destroy-btn">X</button>
+            </li>
+        </script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
