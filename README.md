@@ -11,12 +11,16 @@
 - 4개의 섹션이 있다.
   - Todomon: 투두를 클리어하면 Todomon이 먹이를 먹는다. 먹을때마다 액션을 취한다. 50개를 먹을때마다 진화한다.
   - Inbox: 내 모든 할일을 넣어둔다. 여기서 체크를 하면 Today로 들어간다.
+  - Urgent: 최대한 빨리 처리해야 할 일
   - Today: 오늘 내 할일이다.
   - Analytics: 달성 통계. Git commig log 초록타일처럼 하면 어떨까?
 
 ## 기술
 - Web DB - localstorage or sth
-- angularjs
 - HTML5 Canvas
 - CSS Custom Animation
 - (시각화를 한다면) D3.js
+
+## TODO
+- 
+## DONE

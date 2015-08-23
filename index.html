@@ -11,40 +11,40 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet/less" href="css/index.less">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script> -->
     </head>
     <body>
+        <h1>Food Todo</h1>
         <div class="task-list">
-            <h3>Add a task</h3>
+            <h3>Add</h3>
             <form id="todo-form">
-                <input type="text" placeholder="Title" />
-                <input type="button" class="btn btn-primary" value="Add Task" />
+                <input type="TODO" placeholder="Title" />
+                <input type="button" class="add-btn" value="ADD TODO" />
             </form>
 
-            <input type="button" class="btn btn-primary" value="Clear Data" />
+            <input type="button" class="clear-btn" value="CLEAR ALL" />
         </div>
         <div class="task-list" id="pending">
-            <h3>Pending</h3>
+            <h3>INBOX</h3>
             <div class="todo-task">
-                <div class="task-header">Sample Header</div>
-                <div class="task-date">25/06/1992</div>
+                <input type="checkbox" name="done" value="todo1">
+                <div class="task-header">푸드투두 설계</div>
             </div>
         </div>
 
         <div class="task-list" id="inProgress">
-            <h3>In Progress</h3>
+            <h3>URGENT</h3>
         </div>
 
         <div class="task-list" id="completed">
-            <h3>Completed</h3>
+            <h3>TODAY</h3>
         </div>
-
-
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
